@@ -8,7 +8,6 @@ from collections import defaultdict, deque
 import asyncio
 import json
 import time
-from dotenv import load_dotenv
 
 #Intents
 intents = discord.Intents.default()
@@ -416,7 +415,6 @@ async def most_used_words(interaction: discord.Interaction):
 
 
 
-load_dotenv()
 TOKEN = os.getenv('TOKEN')
 
 bot.run(TOKEN)
